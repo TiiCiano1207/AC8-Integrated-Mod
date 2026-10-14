@@ -1,0 +1,4 @@
+The built-in analysis runtime contains CPython and NumPy.
+CPython license: runtime/python/LICENSE.txt
+NumPy and bundled BLAS licenses: runtime/python/Lib/site-packages/numpy-2.3.5.dist-info/LICENSE.txt
+Original MOD notices remain in THIRD_PARTY_NOTICES.md.

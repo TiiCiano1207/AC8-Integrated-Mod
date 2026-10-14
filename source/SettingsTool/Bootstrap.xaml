@@ -1,0 +1,21 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="AC8 · 解包与安装" Width="680" Height="460" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+ Background="#101A22" Foreground="#F1EEE6" FontFamily="Microsoft YaHei UI" FontSize="14" UseLayoutRounding="True">
+ <Grid Background="#101A22" Margin="34">
+  <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <StackPanel><TextBlock Text="AC8 一体化工具" FontSize="28" FontWeight="SemiBold"/><TextBlock Text="MOD 资源已包含在这个 EXE 中" Foreground="#A8B8C2" Margin="0,9,0,0"/></StackPanel>
+  <StackPanel Grid.Row="1" Margin="0,25,0,0"><TextBlock Text="MOD 存放位置" FontWeight="SemiBold"/><TextBlock Text="请选择游戏目录之外的位置。设置与运行记录也会保存在这里。" TextWrapping="Wrap" Foreground="#A8B8C2" FontSize="12" Margin="0,8,0,12"/>
+   <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+    <TextBox x:Name="Folder" Background="#0C151C" Foreground="#F1EEE6" BorderBrush="#647C8C" Padding="10" VerticalContentAlignment="Center"/>
+    <Button x:Name="Browse" Grid.Column="1" Content="浏览" Margin="10,0,0,0" Padding="17,9" Background="#1B2B36" Foreground="#F1EEE6" BorderBrush="#647C8C"/>
+   </Grid>
+  </StackPanel>
+  <StackPanel Grid.Row="2" Margin="0,20,0,16"><TextBlock x:Name="Status" Text="解包会校验资源完整性，不会在这一步修改游戏目录。" Foreground="#A8B8C2" TextWrapping="Wrap" FontSize="12"/>
+   <ProgressBar x:Name="Progress" Height="5" Margin="0,13,0,0" Visibility="Collapsed" Foreground="#F8B700" Background="#344550"/>
+  </StackPanel>
+  <Grid Grid.Row="3"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+   <Button x:Name="Cancel" Grid.Column="1" Content="取消" Padding="20,10" Margin="0,0,10,0" Background="#1B2B36" Foreground="#F1EEE6" BorderBrush="#647C8C"/>
+   <Button x:Name="Extract" Grid.Column="2" Content="解包并打开工具" Tag="primary" Padding="22,10" Background="#F8B700" Foreground="#101A22" BorderBrush="#F8B700" FontWeight="SemiBold"/>
+  </Grid>
+ </Grid>
+</Window>

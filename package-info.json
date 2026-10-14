@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "status": "release-1.0",
+  "game_build": "25201480",
+  "game_sha256": "51510E2A520565DBE81FB0D569E95CD4393077ACAAA859371489B80B8128829F",
+  "steam_app_id": 2288340,
+  "native_controller_version": "2.4.2 (WAR 13.8)",
+  "functional_baseline": "2.4.1",
+  "release_approved": false,
+  "control_modes": {
+    "0": "PEACE (CLASSIC 2.0, unchanged)",
+    "3": "WAR (exact AC8 rotation-law controller, WT-style structure; degraded mode WAR v11.1)"
+  },
+  "control_policy_migrations": {
+    "1": 0,
+    "2": 3,
+    "4": 3,
+    "5": 3
+  },
+  "native_sha256": "fd86e08a864f4d8e51e3e5adf3a8c85f5586ba4949b30d12fc001d9b276fd05e",
+  "local_customization": "Cockpit mouse control, aircraft-relative C head look, smooth camera roll return; release 1.0 launcher UI and persistent in-game preferences. Original flight calculations and online behavior retained.",
+  "settings_tool_version": "1.0",
+  "distribution": "external-resources",
+  "camera_patch_version": "2.2.1",
+  "release_version": "1.0",
+  "cleanup_patch": "FOV ownership recognition and GUI-selected path fix"
+}
